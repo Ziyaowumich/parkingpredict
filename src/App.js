@@ -98,14 +98,14 @@ function App() {
   return (
     <div className="App">
       <div className="Input">
-        <h1>Input</h1>
+        <h1>input txt file with predicion time in 24 hr format in it(ex: 1 means 1 am to 2 am, 20 means 8 pm to 9 pm)</h1>
         <form onSubmit={handleSubmit}>
-          <input type="file" accept=".png" onChange={handleChange} />
+          <input type="file" accept=".txt" onChange={handleChange} />
           <button type="submit" disabled={buttonDisable}>{buttonText}</button>
         </form>
       </div>
       <div className="Output">
-        <h1>Results</h1>
+        <h1>Prediction</h1>
         <p>{outputFileData}</p>
       </div>
     </div>
